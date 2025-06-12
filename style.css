@@ -1,0 +1,180 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    background: #1e1e1e;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 900px;
+    padding: 2rem 3rem;
+    box-shadow: 0 0 15px #0f0f0f;
+}
+
+h1, h2, h3 {
+    color: #00ff99;
+    text-shadow: 0 0 5px #00ff99;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.forms {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+form {
+    background: #292929;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    flex: 1 1 300px;
+    box-shadow: 0 0 10px #00ff99aa;
+}
+
+form h2 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #121212;
+    color: #e0e0e0;
+    font-size: 1rem;
+    box-shadow: inset 0 0 5px #00ff99cc;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px #00ff99;
+    background: #0d0d0d;
+}
+
+button {
+    width: 100%;
+    padding: 0.9rem;
+    background: #00ff99;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #121212;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ff99;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: #00cc77;
+    box-shadow: 0 0 15px #00cc77;
+}
+
+.summary {
+    background: #292929;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff99aa;
+    margin-bottom: 2rem;
+}
+
+.summary h2 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.summary p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.summary span {
+    float: right;
+    font-weight: 700;
+    color: #00ff99;
+    text-shadow: 0 0 4px #00ff99;
+}
+
+.lists {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.lists > div {
+    flex: 1 1 400px;
+    background: #292929;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 10px #00ff99aa;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.lists h3 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #00ff99;
+    text-shadow: 0 0 5px #00ff99;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background: #121212;
+    margin-bottom: 0.8rem;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    box-shadow: inset 0 0 5px #00ff99aa;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: #b0f2c6;
+    text-shadow: 0 0 3px #00ff99;
+}
+
+/* Scrollbar styling */
+.lists > div::-webkit-scrollbar {
+    width: 8px;
+}
+
+.lists > div::-webkit-scrollbar-thumb {
+    background: #00ff99aa;
+    border-radius: 4px;
+}
+
+.lists > div::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
